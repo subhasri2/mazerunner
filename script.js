@@ -15,7 +15,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 2 – a bit more walls
+  // Level 2
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,1,0,0,0,0,1],
@@ -28,7 +28,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 3 – small zig-zag
+  // Level 3
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,0,0,0,0,0,1],
@@ -41,7 +41,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 4 – more corridors
+  // Level 4
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,0,1,0,0,0,1],
@@ -67,7 +67,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 6 – more dead ends
+  // Level 6
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,0,0,0,1,0,1],
@@ -80,7 +80,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 7 – narrow path, some backtracking
+  // Level 7
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,0,0,1,0,0,1],
@@ -93,7 +93,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 8 – more twists
+  // Level 8
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,0,1,0,0,0,1],
@@ -119,7 +119,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 10 – moderate maze with several turns
+  // Level 10
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,0,0,1,0,0,1],
@@ -132,7 +132,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 11 – tighter maze
+  // Level 11
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,1,0,0,0,0,1],
@@ -145,7 +145,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 12 – more dead-ends and side paths
+  // Level 12
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,0,0,0,1,0,1],
@@ -158,7 +158,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 13 – forced long path
+  // Level 13
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,0,1,0,0,0,1],
@@ -171,7 +171,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 14 – more cramped
+  // Level 14
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,1,0,0,0,0,1],
@@ -184,7 +184,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 15 – narrow labyrinth
+  // Level 15
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,0,0,0,1,0,1],
@@ -197,7 +197,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 16 – very tight maze, little open space
+  // Level 16
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,1,0,1,0,0,1],
@@ -210,7 +210,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 17 – long winding route with side branches
+  // Level 17
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,0,0,0,0,0,1],
@@ -223,7 +223,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 18 – lots of fake paths
+  // Level 18
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,0,0,1,0,0,0,1],
@@ -236,7 +236,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 19 – very constrained route
+  // Level 19
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,1,1,1,1,0,1],
@@ -249,7 +249,7 @@ const levels = [
     [1,1,1,1,1,1,1,1,1,1]
   ],
 
-  // Level 20 – hardest: tight, twisty, few open tiles
+  // Level 20 – hardest
   [
     [1,1,1,1,1,1,1,1,1,1],
     [1,"S",0,1,0,0,0,1,0,1],
@@ -263,14 +263,40 @@ const levels = [
   ]
 ];
 
+// Sweet & funny completion notes per level (index 0 = Level 1, etc.)
+const levelCompletionMessages = [
+  "Nice job! That was just the warm-up. 🌱",
+  "Smooth moves! The walls are starting to respect you. 😎",
+  "You navigated that like a GPS with no bugs. 🛰️",
+  "You’re basically a maze whisperer now. 🧠",
+  "That one was twisty, but you were twistier. 🌀",
+  "You dodged those walls like a pro ninja. 🥷",
+  "Your brain pinged every right turn there. 🧩",
+  "You and these mazes? It’s getting serious. 💘",
+  "That path was confusing. You weren’t. 💪",
+  "Halfway there! The maze union has filed a complaint. 📢",
+  "Level 11 crushed. Double digits, double skills. 🔥",
+  "You untangled that like a spaghetti-code refactor. 🍝",
+  "Unlucky 13? Not for you. 😏",
+  "These walls are starting to panic. 😱",
+  "You’re speedrunning life choices at this point. ⚡",
+  "That was evil. You were eviler. 😈",
+  "You just styled that maze with pure logic. 🎨",
+  "The maze tried to gaslight you. You said nope. 🚫",
+  "Only one left. The walls are shaking. 🌋",
+  "Legendary! You conquered all 20 levels. 👑"
+];
+
 const mazeContainer = document.getElementById("maze");
 const statusText = document.getElementById("status");
+const levelLabel = document.getElementById("level-label");
 
 let currentLevelIndex = 0;
 let mazeLayout = levels[currentLevelIndex];
 
 let playerPosition = { row: 0, col: 0 };
 let goalPosition = { row: 0, col: 0 };
+let levelCompleted = false;
 
 // Build the maze UI
 function renderMaze() {
@@ -319,25 +345,20 @@ function findSpecialPositions() {
 function loadLevel(index) {
   currentLevelIndex = index;
   mazeLayout = levels[currentLevelIndex];
+  levelCompleted = false;
   findSpecialPositions();
   renderMaze();
+  levelLabel.textContent = `Level ${currentLevelIndex + 1} of ${levels.length}`;
   statusText.textContent =
-    `Level ${currentLevelIndex + 1} – use arrow keys / WASD. Reach the green goal!`;
+    `Level ${currentLevelIndex + 1}: Use Arrow keys or W/A/S/D to move. ` +
+    `Press R to restart this level. After you finish, press N to go to the next level.`;
 }
 
-// Handle keyboard input
+// Handle movement
 function handleKeyDown(event) {
-  if (statusText.textContent.includes("All levels complete")) return;
+  if (levelCompleted) return; // don't move after completion until R or N
 
   const key = event.key;
-
-  // Block movement if finished level but not moved on
-  if (statusText.textContent.includes("You reached the goal")) {
-    if (key === "n" || key === "N") {
-      goToNextLevel();
-    }
-    return;
-  }
 
   let newRow = playerPosition.row;
   let newCol = playerPosition.col;
@@ -358,16 +379,23 @@ function handleKeyDown(event) {
   }
 
   playerPosition = { row: newRow, col: newCol };
-  statusText.textContent = `Level ${currentLevelIndex + 1}`;
+  statusText.textContent = `Level ${currentLevelIndex + 1}: Keep going!`;
 
+  // Check if goal reached
   if (newRow === goalPosition.row && newCol === goalPosition.col) {
-    if (currentLevelIndex === levels.length - 1) {
-      statusText.textContent =
-        "🎉 You reached the goal on Level 20 – All levels complete!";
+    levelCompleted = true;
+    const niceMessage = levelCompletionMessages[currentLevelIndex] || "";
+    let msg =
+      `🎉 Level ${currentLevelIndex + 1} complete! ` +
+      niceMessage;
+
+    if (currentLevelIndex < levels.length - 1) {
+      msg += ` Press N to go to Level ${currentLevelIndex + 2} or R to replay Level ${currentLevelIndex + 1}.`;
     } else {
-      statusText.textContent =
-        `🎉 You reached the goal on Level ${currentLevelIndex + 1}! Press N for next level or R to replay.`;
+      msg += ` Press R to replay Level 20. Refresh the page to start from Level 1 again.`;
     }
+
+    statusText.textContent = msg;
   }
 
   renderMaze();
@@ -384,16 +412,23 @@ function goToNextLevel() {
     loadLevel(currentLevelIndex + 1);
   } else {
     statusText.textContent =
-      "🎉 You finished Level 20 – there are no more levels!";
+      "🎉 You finished Level 20 – there are no more levels! Press R to replay Level 20 or refresh to start over.";
   }
 }
 
 // Listen for key presses
 document.addEventListener("keydown", (event) => {
-  if (event.key === "r" || event.key === "R") {
+  const key = event.key;
+
+  if (key === "r" || key === "R") {
     resetGame();
-  } else if (event.key === "n" || event.key === "N") {
-    goToNextLevel();
+  } else if (key === "n" || key === "N") {
+    if (levelCompleted) {
+      goToNextLevel();
+    } else {
+      statusText.textContent =
+        `You haven't finished Level ${currentLevelIndex + 1} yet. Reach the green goal first, then press N.`;
+    }
   } else {
     handleKeyDown(event);
   }
